@@ -42,14 +42,14 @@ function readProjectFile(filename: string): Project {
 export function getProjects(): Project[] {
   const projectOrder = [
     "fedguard",
-    "vlm-shoplifting-detection",
-    "yonn-gpt",
+    "vlm-shoplifting",
+    "yonngpt",
     "dealdoc-ai",
-    "firewall-analysis-project",
+    "firewall-analysis",
+    "icbhi",
+    "customer-review-analysis",
+    "sentiment-analysis",
     "smartassign",
-    "icbhi-respiratory-sound-classification",
-    "customer-review-sentiment-analysis",
-    "imdb-sentiment-analysis",
   ]
 
   const projects = fs
