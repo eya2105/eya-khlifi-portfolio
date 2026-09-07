@@ -7,7 +7,7 @@ import { ScrollButtons } from "@/components/ScrollButtons";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AnimatePresence } from "motion/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -22,7 +22,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eya Khlifi — AI, Cybersecurity & Networks",
+  title: "Eya KHLIFI — AI, Cybersecurity & Networks",
   description: "Building intelligent, secure, and connected systems.",
 };
 
@@ -39,10 +39,7 @@ export default function RootLayout({
         <CursorGlow />
         <ScrollProgress />
         <Navbar />
-        <AnimatePresence mode="wait">
-          {children}
-          <SpeedInsights />
-        </AnimatePresence>
+        <AnimatePresence mode="wait">{children}</AnimatePresence>
         <ScrollButtons />
       </body>
     </html>
