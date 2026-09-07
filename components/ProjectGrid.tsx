@@ -6,12 +6,36 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Project } from "@/lib/projects";
 import { ProjectCard } from "./ProjectCard";
 
-export function ProjectGrid({ projects }: { projects: Project[] }) {
+export function ProjectGrid({
+  projects,
+  initialSlug = null,
+}: {
+  projects: Project[];
+  initialSlug?: string | null;
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Set initial index based on slug (fallback: read from URL if prop missing)
+  useEffect(() => {
+    let targetSlug = initialSlug;
+
+    // If prop is not provided, try reading from window.location
+    if (!targetSlug && typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      targetSlug = params.get("project");
+    }
+
+    if (targetSlug) {
+      const index = projects.findIndex((p) => p.slug === targetSlug);
+      if (index !== -1) {
+        setCurrentIndex(index);
+      }
+    }
+  }, [initialSlug, projects]);
 
   if (projects.length === 0) return null;
 

@@ -2,7 +2,7 @@
 title: "SmartAssign"
 year: "2025"
 category: "AI & Software Engineering"
-description: "AI-assisted employee task management combining resume-based skill matching and biometric authentication."
+description: "AI-assisted employee task management combining resume intelligence, skill matching, and biometric authentication."
 technologies:
   - Python
   - Django
@@ -11,40 +11,49 @@ technologies:
   - NLP
   - Resume Parsing
 private: true
-featured: false
 ---
 
 ## Overview
 
-SmartAssign is an employee task management application designed to improve task allocation by considering employee skills, availability, and resume information.
+SmartAssign is an employee task management application designed to support intelligent task allocation by combining employee skills, availability, resume information, and biometric authentication.
 
-My work focused on the AI components of the platform.
+The project combined two applied AI components with a Django application: an automated resume and task matching pipeline, and a facial recognition authentication system.
+
+**Note:** The full SmartAssign repository is private, but the two AI components I built are available as separate public repositories linked below.
 
 ## My contribution
 
+My work focused on the AI components of the platform.
+
 ### AI-powered task matching
 
-I developed a resume-processing pipeline that:
+I developed a resume processing pipeline that:
 
-- Extracts information from employee CVs.
-- Identifies relevant skills.
-- Structures the extracted information.
-- Compares employee skills with task requirements.
-- Produces matching scores to support task assignment.
+- Parses PDF resumes and extracts relevant textual information.
+- Identifies employee names and relevant skills using NLP techniques.
+- Structures extracted information into machine-readable data.
+- Compares employee skills against task requirements.
+- Computes matching scores to support task assignment.
+
+Built the standalone implementation in the **Resume Task Matcher** repository:  
+[Resume Task Matcher](https://github.com/eya2105/Resume-Task-Matcher.git)
 
 ### Facial authentication
 
-I also developed the facial authentication component using Django and computer vision.
+I developed a facial recognition login system using Django and the `face_recognition` library. The system provides two authentication methods:
 
-The system captures a webcam image, detects and encodes the user's face, and compares the resulting representation with registered users before granting access.
+- **Facial recognition:** Users capture their face via webcam, which is then encoded and compared against stored facial embeddings.
+- **Traditional login:** A fallback username and password system in case face recognition fails.
 
-## Technical focus
+The system works as follows:
 
-The project combined practical web engineering with two applied AI use cases:
+- Captures a user's face through the browser webcam.
+- Detects the face and generates a 128‑dimensional facial embedding using a ResNet-based deep learning model.
+- Compares the embedding against registered users in the database using similarity comparison.
+- Integrates the verification process with Django authentication and session management.
+- Offers a reload/reset webcam interface with a preview of the captured photo before submission.
 
-- Computer vision for authentication
-- NLP/information extraction for employee-task matching
+The implementation is available in the **FaceRecognitionAI** repository:  
+[FaceRecognitionAI](https://github.com/eya2105/FaceRecognitionAI.git)
 
-## Takeaway
 
-SmartAssign gave me experience integrating AI into an actual application rather than treating machine learning as an isolated notebook experiment.

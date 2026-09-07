@@ -1,52 +1,80 @@
 ---
+
 title: "Firewall Log Analysis Platform"
-year: "2026"
+
+year: "2025"
+
 category: "Cybersecurity"
+
 description: "Modular full-stack platform for firewall log analysis with secure authentication, anomaly detection, and reporting."
+
 technologies:
+
   - NestJS
+
   - TypeScript
+
   - Angular
+
   - PostgreSQL
+
   - JWT
+
   - RBAC
+
   - Firewall Analysis
+
   - REST API
+
 github: "https://github.com/eya2105/firewall-analysis-project.git"
+
 featured: false
+
 ---
 
 ## Overview
 
 A modular full-stack platform for importing, processing, analyzing, and visualizing firewall logs.
 
-The system supports firewall log ingestion, filtering, anomaly detection, dashboards, and reporting.
+The application combines secure backend services with firewall log parsing, normalization, filtering, anomaly analysis, statistical dashboards, and reporting.
 
 ## My contribution
 
-I was responsible for the backend security and authentication module.
+I was responsible for the backend security and authentication layer.
 
-- Implemented JWT access and refresh token authentication.
-- Designed role-based access control (RBAC).
-- Implemented permission guards.
-- Added audit logging for security-sensitive actions.
-- Implemented account lockout mechanisms.
+- Implemented JWT-based access and refresh token authentication.
+
+- Designed role-based access control to separate permissions across user roles.
+
+- Implemented authorization guards for protected backend resources.
+
+- Added audit logging for security-sensitive operations.
+
+- Implemented account lockout mechanisms to mitigate repeated unauthorized access attempts.
+
 - Added secure refresh-token rotation.
-- Integrated the authentication layer with the rest of the backend.
+
+- Integrated the authentication and authorization layer with the rest of the NestJS backend.
 
 ## Platform
 
-The wider system combines:
+The wider application combines:
 
-- NestJS backend
-- Angular frontend
-- PostgreSQL
-- Firewall log parsing and normalization
-- Dynamic log filtering
-- Anomaly analysis
-- Statistical dashboards
-- Report generation
+- NestJS backend services.
 
-## Takeaway
+- Angular frontend.
 
-This project strengthened my backend engineering particularly around designing authentication and authorization mechanisms for a multi-user security application.
+- PostgreSQL data storage.
+
+- Firewall log parsing and normalization.
+
+- Dynamic log filtering.
+
+- Anomaly analysis.
+
+- Statistical dashboards.
+
+- Report generation.
+
+The architecture was designed as a modular application so that security controls, log processing, analysis, and presentation could evolve independently.
+

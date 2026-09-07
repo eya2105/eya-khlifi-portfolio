@@ -1,51 +1,73 @@
 ---
+
 title: "DealDocAI"
+
 year: "2026"
+
 category: "LLM Engineering"
+
 description: "Grounded RAG system for querying financial filings and extracting structured deal information."
+
 technologies:
+
   - Python
+
   - RAG
+
   - SentenceTransformers
+
   - ChromaDB
+
   - Llama 3.3 70B
+
   - FastAPI
+
   - Pydantic
+
 github: "https://github.com/eya2105/dealdoc-ai.git"
+
 featured: true
+
 ---
 
 ## Overview
 
-DealDocAI is an end-to-end Retrieval-Augmented Generation system for working with financial and legal documents.
+DealDocAI is an end-to-end Retrieval-Augmented Generation system for querying financial and legal documents.
 
-The system ingests SEC filings related to the Microsoft–Activision acquisition and lets users ask questions in natural language while grounding answers in the original documents.
+The system ingests SEC filings related to the Microsoft–Activision acquisition, processes the documents for semantic retrieval, and allows users to ask natural-language questions while grounding generated answers in the original evidence.
 
 ## What I built
 
-- Built the complete RAG pipeline from scratch.
-- Processed and chunked large financial documents.
-- Generated semantic embeddings with SentenceTransformers.
-- Stored document representations in ChromaDB.
-- Implemented semantic retrieval and context construction.
-- Added citation-grounded question answering.
-- Implemented structured extraction of deal terms as JSON.
-- Added multi-query retrieval to improve recall.
-- Built a FastAPI REST API with Pydantic validation.
-- Added a lightweight browser interface for demonstration.
+- Designed and implemented the complete RAG pipeline from scratch.
+
+- Processed and chunked large legal and financial documents.
+
+- Generated semantic embeddings using SentenceTransformers.
+
+- Built the vector storage and retrieval layer with ChromaDB.
+
+- Implemented context construction for grounded generation.
+
+- Added citation-grounded question answering so responses can be traced back to source documents.
+
+- Implemented structured extraction of deal terms into validated JSON.
+
+- Added multi-query retrieval by generating alternative formulations of the original question to improve retrieval recall.
+
+- Built a FastAPI REST API with Pydantic request and response validation.
+
+- Implemented dedicated modules for embeddings, retrieval, vector database operations, LLM interaction, and API functionality.
+
+- Built a lightweight browser interface for demonstrating the complete system.
 
 ## Architecture
 
-The system separates document processing, embeddings, retrieval, LLM interaction, and API layers into dedicated modules.
+The architecture separates document processing, embedding generation, vector retrieval, context construction, LLM generation, and API serving into dedicated components.
 
-For generation, the system uses **Llama 3.3 70B through Groq**.
+The generation layer uses **Llama 3.3 70B through Groq**, while ChromaDB provides semantic document retrieval and SentenceTransformers generates the document representations.
 
 ## Key design choice
 
 I deliberately implemented the RAG pipeline without LangChain.
 
-This allowed me to work directly with the core components of retrieval-augmented generation rather than hiding the architecture behind a high-level framework.
-
-## Takeaway
-
-DealDocAI demonstrates my ability to move beyond prompt-based LLM applications and build the retrieval, grounding, structured extraction, and API layers required for a complete AI system.
+Working directly with document processing, embeddings, retrieval, prompting, and generation made the underlying architecture explicit and allowed me to control each stage of the retrieval pipeline.

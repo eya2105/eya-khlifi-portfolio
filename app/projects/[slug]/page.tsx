@@ -46,11 +46,13 @@ export default async function ProjectPage({ params }: Props) {
   return (
     <main className="min-h-screen">
       <div className="tech-grid fixed inset-0 -z-10 opacity-20" />
-
       <div className="mx-auto max-w-5xl px-6 pb-32 pt-36">
-        <Link href="/#work" className="inline-flex items-center gap-2 text-sm text-white/35 transition hover:text-white">
+        <Link
+          href={`/?project=${project.slug}#work`}
+          className="inline-flex items-center gap-2 text-sm text-white/35 transition hover:text-white"
+        >
           <ArrowLeft size={15} />
-          Back to work
+          Back to Projects
         </Link>
 
         <header className="mt-16 border-b border-white/10 pb-14">

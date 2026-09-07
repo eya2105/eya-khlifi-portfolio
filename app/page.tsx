@@ -17,13 +17,19 @@ import { Reveal } from "@/components/Reveal";
 import { getProjects } from "@/lib/projects";
 import { PageWrapper } from "@/components/PageWrapper";
 
-export default function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ project?: string }>;
+}) {
+  const params = await searchParams;
   const projects = getProjects();
+  const initialSlug = params?.project || null;
 
   return (
     <main>
       <PageWrapper>
-    
+        {/* -------- HERO -------- */}
         <section id="hero" className="relative flex min-h-screen items-center px-5 pb-20 pt-32 md:px-8 lg:px-12">
           <div className="mx-auto w-full max-w-7xl text-center">
             <Reveal>
@@ -323,7 +329,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <ProjectGrid projects={projects} />
+                  <ProjectGrid projects={projects} initialSlug={initialSlug} />
                 </div>
               </div>
             </Reveal>
