@@ -7,6 +7,7 @@ import { ScrollButtons } from "@/components/ScrollButtons";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AnimatePresence } from "motion/react";
+import { SpeedInsights } from "@vercel/speed-insights/nuxt/runtime";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <Navbar />
         <AnimatePresence mode="wait">
           {children}
+          <SpeedInsights />
         </AnimatePresence>
         <ScrollButtons />
       </body>
