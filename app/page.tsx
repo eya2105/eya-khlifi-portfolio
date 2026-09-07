@@ -25,9 +25,9 @@ export default function Home() {
       <PageWrapper>
     
         <section id="hero" className="relative flex min-h-screen items-center px-5 pb-20 pt-32 md:px-8 lg:px-12">
-          <div className="mx-auto w-full max-w-7xl">
+          <div className="mx-auto w-full max-w-7xl text-center">
             <Reveal>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center gap-3">
                 <span className="title-hover font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500 transition-colors duration-300">
                   INTELLIGENT SYSTEMS · TRUSTWORTHY AI · CYBERSECURITY
                 </span>
@@ -35,7 +35,7 @@ export default function Home() {
             </Reveal>
 
             <Reveal delay={0.08}>
-              <h1 className="title-hover text-hover-scale mt-8 max-w-5xl font-display text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.02em] text-white transition-all duration-300 hover:text-shadow-glow">
+              <h1 className="title-hover text-hover-scale mt-8 max-w-5xl mx-auto font-display text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.02em] text-white transition-all duration-300 hover:text-shadow-glow">
                 Building systems that <br />
                 think, connect, and{" "}
                 <span className="text-blue-300">stay secure.</span>
@@ -43,13 +43,13 @@ export default function Home() {
             </Reveal>
 
             <Reveal delay={0.16}>
-              <p className="text-hover-scale drop-cap mt-6 max-w-2xl text-[15px] leading-7 text-slate-400 md:text-base md:leading-8">
+              <p className="text-hover-scale mt-6 max-w-2xl mx-auto text-[15px] leading-7 text-slate-400 md:text-base md:leading-8">
                 From fine‑tuned vision‑language models and local LLMs to grounded RAG and federated network defense, I turn research into production‑ready systems — and rigorously test where they work, where they fail, and why.
               </p>
             </Reveal>
 
             <Reveal delay={0.24}>
-              <div className="mt-8 flex flex-wrap items-center gap-6">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
                 <a
                   href="#work"
                   className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition-all hover:border-blue-400/40 hover:bg-blue-400/10"
@@ -66,30 +66,24 @@ export default function Home() {
             </Reveal>
           </div>
         </section>
-
         
         <section
           id="about"
           className="relative overflow-hidden px-5 py-32 md:px-8 lg:px-12"
         >
-          {/* Background glow */}
           <div className="pointer-events-none absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-cyan-500/5 blur-[140px]" />
 
           <div className="relative mx-auto max-w-7xl">
-            {/* HEADER */}
             <div className="mb-20 grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">
               <div>
-                {/* Name */}
                 <h1 className="title-hover text-5xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-6xl lg:text-7xl hover:text-shadow-glow">
                   Eya KHLIFI
                 </h1>
-
-                {/* Role */}
                 <p className="text-hover-scale mt-5 text-xl text-white/60 sm:text-2xl">
-                  Engineering Student · Artificial Intelligence & Cybersecurity
+                  Engineering Student
+                  <br />
+                  Artificial Intelligence & Cybersecurity
                 </p>
-
-         
                 <div className="mt-7 text-sm text-white/50">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="flex items-center gap-2">
@@ -300,16 +294,12 @@ export default function Home() {
                       <h2 className="title-hover text-3xl font-medium text-white transition-colors duration-300 sm:text-4xl hover:text-shadow-glow">
                         What I'm looking for
                       </h2>
-                      <p className="text-hover-scale mt-5 max-w-3xl text-base leading-8 text-white/50">
+                      <p className="text-hover-scale mt-5  text-base leading-8 text-white/50">
                         I am looking for a six-month end-of-study internship where I can work on challenging problems at the intersection of AI engineering, applied machine learning, cybersecurity, or AI research.
                       </p>
-                      <p className="text-hover-scale mt-4 max-w-3xl text-base leading-8 text-white/50">
+                      <p className="text-hover-scale mt-4  text-base leading-8 text-white/50">
                         I am especially interested in teams where experimentation, rigorous evaluation, and engineering come together to build systems that are useful beyond the prototype stage.
                       </p>
-                    </div>
-                    <div className="flex items-center gap-3 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-5 py-3 text-sm text-cyan-300">
-                      <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
-                      Open to opportunities
                     </div>
                   </div>
                 </div>
@@ -348,7 +338,7 @@ export default function Home() {
                   <h2 className="title-hover text-hover-scale font-display text-3xl leading-tight text-white md:text-4xl hover:text-shadow-glow">
                     Let's get in touch
                   </h2>
-                  <p className="text-hover-scale mt-5 max-w-xl text-[15px] leading-8 text-slate-400">
+                  <p className="text-hover-scale mt-5 text-[15px] leading-8 text-slate-400">
                     I'm interested in engineering projects, research opportunities, and work around AI, cybersecurity, and intelligent systems.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-4">

@@ -68,7 +68,7 @@ export function ProjectCard({ project }: { project: Project }) {
               {project.title}
             </h3>
 
-            <p className="text-hover-scale mt-6 max-w-2xl text-sm leading-7 text-slate-400 transition-transform duration-300 md:text-[15px] md:leading-8">
+            <p className="text-hover-scale mt-6 text-sm leading-7 text-slate-400 transition-transform duration-300 md:text-[15px] md:leading-8">
               {project.description}
             </p>
           </div>
