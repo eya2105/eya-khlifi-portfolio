@@ -46,7 +46,6 @@ body {
   color: white;
 }
 
-/* ---------- Animated Background ---------- */
 .animated-bg {
   position: fixed;
   inset: 0;
@@ -75,7 +74,6 @@ body {
   font-family: var(--font-mono), monospace;
 }
 
-/* ---------- Glass ---------- */
 .glass {
   background: rgba(10, 14, 26, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -83,7 +81,6 @@ body {
   -webkit-backdrop-filter: blur(20px);
 }
 
-/* ---------- Accent border glow on hover ---------- */
 .glow-border {
   position: relative;
   transition: border-color 0.3s ease;
@@ -104,7 +101,6 @@ body {
   pointer-events: none;
 }
 
-/* ---------- Scrollbar ---------- */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -119,7 +115,6 @@ body {
   background: #444;
 }
 
-/* ---------- Gradient Text ---------- */
 .gradient-text {
   background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
   -webkit-background-clip: text;
@@ -127,7 +122,6 @@ body {
   color: transparent;
 }
 
-/* ---------- Hover scale ---------- */
 a, button {
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -150,7 +144,6 @@ a:active, button:active {
   transform: scale(1.02);
 }
 
-/* ---------- Drop‑cap ---------- */
 .drop-cap::first-letter {
   font-size: 2.5em;
   font-weight: 600;
@@ -163,7 +156,6 @@ a:active, button:active {
   -webkit-text-fill-color: transparent;
 }
 
-/* ---------- Scroll progress bar ---------- */
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -175,7 +167,6 @@ a:active, button:active {
   width: 0%;
 }
 
-/* ---------- Text shadow glow ---------- */
 .text-shadow-glow {
   transition: text-shadow 0.3s ease;
 }
@@ -183,7 +174,6 @@ a:active, button:active {
   text-shadow: 0 0 30px rgba(96, 165, 250, 0.15);
 }
 
-/* ---------- Project detail page prose ---------- */
 .project-prose h1,
 .project-prose h2,
 .project-prose h3,
@@ -245,7 +235,6 @@ a:active, button:active {
   font-size: 0.9em;
   color: #f9a8d4;
 }
-/* ---------- Project prose hover effects ---------- */
 .project-prose h1,
 .project-prose h2,
 .project-prose h3,
@@ -270,7 +259,6 @@ a:active, button:active {
   transform: scale(1.02);
 }
 
-/* Keep lists and other elements from scaling */
 .project-prose ul,
 .project-prose ol {
   transition: none;

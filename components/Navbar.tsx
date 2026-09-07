@@ -11,15 +11,13 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-7xl px-5 pt-5 md:px-8">
         <nav className="bg-[#0a0e1a]/40 backdrop-blur-xl border border-white/10 rounded-2xl px-5 flex h-14 items-center justify-between transition-all">
-          {/* Logo – bigger font, links to #hero */}
           <Link
             href="/#hero"
             className="font-display text-[17px] font-semibold text-white transition-colors hover:text-blue-300"
           >
-            Eya Khlifi
+            Eya KHLIFI
           </Link>
 
-          {/* Main navigation – bigger font */}
           <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex">
             <a
               href="/#about"
@@ -41,7 +39,6 @@ export function Navbar() {
             </a>
           </div>
 
-          {/* External links – bigger font */}
           <div className="hidden items-center gap-5 md:flex">
             <a
               href="https://www.linkedin.com/in/eya-khlifi"
@@ -61,7 +58,6 @@ export function Navbar() {
             </a>
           </div>
 
-          {/* Mobile toggle – unchanged */}
           <button
             onClick={() => setOpen(!open)}
             className="text-slate-400 hover:text-white md:hidden"
@@ -71,7 +67,6 @@ export function Navbar() {
           </button>
         </nav>
 
-        {/* Mobile menu – also bigger font */}
         {open && (
           <div className="bg-[#0a0e1a]/80 backdrop-blur-xl border border-white/10 mt-2 rounded-2xl p-4 md:hidden">
             <div className="flex flex-col gap-1">

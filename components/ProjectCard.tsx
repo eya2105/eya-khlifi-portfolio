@@ -5,7 +5,6 @@ import { Lock } from "lucide-react";
 import type { Project } from "@/lib/projects";
 import { useRef } from "react";
 
-// Color palette for tech tags – cycles through these on hover
 const tagColors = [
   { border: "hover:border-blue-400/40", bg: "hover:bg-blue-400/10", text: "hover:text-blue-300" },
   { border: "hover:border-purple-400/40", bg: "hover:bg-purple-400/10", text: "hover:text-purple-300" },

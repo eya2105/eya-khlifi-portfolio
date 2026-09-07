@@ -32,7 +32,6 @@ export default async function ProjectPage({ params }: Props) {
 
   const content = await renderMarkdown(project.content);
 
-  // Color palette for tech tags – cycles through these on hover
   const tagColors = [
     { border: "hover:border-blue-400/40", bg: "hover:bg-blue-400/10", text: "hover:text-blue-300" },
     { border: "hover:border-purple-400/40", bg: "hover:bg-purple-400/10", text: "hover:text-purple-300" },
@@ -46,17 +45,14 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <main className="min-h-screen">
-      {/* Subtle background */}
       <div className="tech-grid fixed inset-0 -z-10 opacity-20" />
 
       <div className="mx-auto max-w-5xl px-6 pb-32 pt-36">
-        {/* Back link */}
         <Link href="/#work" className="inline-flex items-center gap-2 text-sm text-white/35 transition hover:text-white">
           <ArrowLeft size={15} />
           Back to work
         </Link>
 
-        {/* Hero */}
         <header className="mt-16 border-b border-white/10 pb-14">
           <div className="flex items-center gap-3">
             <span className="font-mono text-xs text-white/30">{project.year}</span>
@@ -71,8 +67,7 @@ export default async function ProjectPage({ params }: Props) {
             )}
           </div>
 
-          {/* Title – blue with hover effects */}
-          <h1 className="title-hover text-hover-scale mt-7 max-w-4xl text-5xl font-semibold tracking-[-0.04em] text-blue-300 transition-colors duration-300 md:text-7xl hover:text-shadow-glow">
+          <h1 className="title-hover text-hover-scale mt-7 max-w-4xl text-5xl font-semibold tracking-[-0.04em] text-blue-200 transition-colors duration-300 md:text-7xl hover:text-shadow-glow">
             {project.title}
           </h1>
 
@@ -80,7 +75,6 @@ export default async function ProjectPage({ params }: Props) {
             {project.description}
           </p>
 
-          {/* Technologies – rounded and colored */}
           <div className="mt-8 flex flex-wrap gap-2">
             {project.technologies.map((tech, index) => {
               const color = tagColors[index % tagColors.length];
@@ -96,14 +90,12 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </header>
 
-        {/* Content + Sidebar */}
         <div className="grid gap-16 pt-14 md:grid-cols-[1fr_240px]">
           <article
             className="project-prose prose prose-invert prose-sm max-w-none prose-headings:title-hover prose-headings:text-white prose-headings:transition-colors prose-headings:duration-300 prose-headings:hover:text-blue-300 prose-headings:hover:text-shadow-glow prose-p:text-hover-scale prose-p:transition-transform prose-p:duration-300 prose-p:text-white/70 prose-strong:text-white prose-a:text-blue-300 prose-code:text-pink-300"
             dangerouslySetInnerHTML={{ __html: content }}
           />
 
-          {/* Sidebar – now using glass glow-border */}
           <aside className="h-fit md:sticky md:top-28">
             <div className="glass glow-border relative overflow-hidden rounded-2xl p-5 transition-all duration-300 hover:border-blue-400/20">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/25">Project</p>

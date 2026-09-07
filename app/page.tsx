@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <PageWrapper>
-        {/* ---------- HERO ---------- */}
+    
         <section id="hero" className="relative flex min-h-screen items-center px-5 pb-20 pt-32 md:px-8 lg:px-12">
           <div className="mx-auto w-full max-w-7xl">
             <Reveal>
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- ABOUT ---------- */}
+        
         <section
           id="about"
           className="relative overflow-hidden px-5 py-32 md:px-8 lg:px-12"
@@ -89,7 +89,7 @@ export default function Home() {
                   Engineering Student · Artificial Intelligence & Cybersecurity
                 </p>
 
-                {/* Location / focus */}
+         
                 <div className="mt-7 text-sm text-white/50">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="flex items-center gap-2">
@@ -111,7 +111,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Social / document links */}
               <div className="flex flex-wrap gap-3 lg:justify-end">
                 {/* GitHub – Purple */}
                 <a
@@ -125,7 +124,7 @@ export default function Home() {
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
 
-                {/* LinkedIn – Pink */}
+         
                 <a
                   href="https://www.linkedin.com/in/eya-khlifi/"
                   target="_blank"
@@ -137,7 +136,7 @@ export default function Home() {
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
 
-                {/* CV – Cyan/Blue */}
+          
                 <a
                   href="https://drive.google.com/file/d/1gFLhDPXs9vvdKQuol2y5oDha0lKPpKfC/view?usp=drive_link"
                   target="_blank"
@@ -149,7 +148,6 @@ export default function Home() {
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
 
-                {/* Certifications – Amber/Gold */}
                 <a
                   href="https://drive.google.com/drive/folders/1SOgdLK2VlNJZcGigoosboFTH5PQXHcQW?usp=drive_link"
                   target="_blank"
@@ -161,7 +159,7 @@ export default function Home() {
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
 
-                {/* Email – Teal */}
+  
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=eya.khlifi@insat.ucar.tn"
                   target="_blank"
@@ -174,7 +172,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ABOUT CONTENT */}
             <div className="grid gap-16 lg:grid-cols-[0.85fr_1.15fr]">
               <div className="lg:sticky lg:top-32 lg:self-start">
                 <div className="rounded-3xl border border-white/10 bg-white/[0.025] p-7 backdrop-blur-xl sm:p-9">
@@ -233,7 +230,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* FOCUS AREAS */}
             <div className="mt-28">
               <div className="mb-10">
                 <h2 className="title-hover text-3xl font-medium text-white transition-colors duration-300 sm:text-4xl hover:text-shadow-glow">
@@ -242,7 +238,7 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {/* AI Engineering */}
+        
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <BrainCircuit className="h-5 w-5 text-cyan-400" />
@@ -255,7 +251,6 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* Multimodal AI */}
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <ScanEye className="h-5 w-5 text-cyan-400" />
@@ -268,7 +263,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* AI Systems */}
+        
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <Database className="h-5 w-5 text-cyan-400" />
@@ -281,7 +276,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* AI + Cybersecurity */}
+        
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <ShieldCheck className="h-5 w-5 text-cyan-400" />
@@ -296,7 +291,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* WHAT I'M LOOKING FOR */}
             <div className="mt-28">
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.025] p-8 backdrop-blur-xl sm:p-10">
                 <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-cyan-400/10 blur-[100px]" />
@@ -324,7 +318,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- PROJECTS ---------- */}
         <section id="work" className="border-t border-white/5 px-5 py-24 md:px-8 md:py-28 lg:px-12">
           <div className="mx-auto max-w-7xl">
             <Reveal>
@@ -347,7 +340,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- CONTACT ---------- */}
         <section id="contact" className="border-t border-white/5 px-5 py-24 md:px-8 md:py-28 lg:px-12">
           <div className="mx-auto max-w-7xl">
             <Reveal>
@@ -371,7 +363,6 @@ export default function Home() {
                       <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
 
-                    {/* Email – no subject (blank compose) */}
                     <a
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=eya.khlifi@insat.ucar.tn"
                       target="_blank"

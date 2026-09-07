@@ -18,7 +18,6 @@ export function ScrollButtons() {
       setIsAtBottom(bottomReached);
     };
 
-    // Initial check
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
@@ -33,7 +32,6 @@ export function ScrollButtons() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
-  // Hide when in the middle
   if (!isAtTop && !isAtBottom) return null;
 
   return (

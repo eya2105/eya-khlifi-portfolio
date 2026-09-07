@@ -63,7 +63,6 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
       onMouseLeave={handleMouseLeave}
       className="relative"
     >
-      {/* Project Card with overlay arrows */}
       <div className="relative overflow-hidden">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
@@ -78,7 +77,6 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
           </motion.div>
         </AnimatePresence>
 
-        {/* Left arrow overlay */}
         <AnimatePresence>
           {showLeftArrow && (
             <motion.button
@@ -95,7 +93,6 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
           )}
         </AnimatePresence>
 
-        {/* Right arrow overlay */}
         <AnimatePresence>
           {showRightArrow && (
             <motion.button
@@ -113,7 +110,6 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
         </AnimatePresence>
       </div>
 
-      {/* Progress dashes – glass white */}
       <div className="mt-6 flex items-center gap-2 px-1">
         {projects.map((project, index) => (
           <button
