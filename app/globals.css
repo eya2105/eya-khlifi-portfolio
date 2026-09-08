@@ -29,20 +29,20 @@ body {
   background:
     radial-gradient(
       circle at 15% 10%,
-      rgb(1, 10, 28),
+      rgb(2, 10, 26),
       transparent 32%
     ),
     radial-gradient(
       circle at 85% 20%,
-      rgba(30, 5, 54, 0.893),
+      rgba(47, 6, 85, 0.704),
       transparent 30%
     ),
     radial-gradient(
       circle at 70% 80%,
-      rgba(31, 15, 23, 0.652),
+      rgba(81, 3, 43, 0.366),
       transparent 28%
     ),
-    #041123;
+    #021025;
   color: white;
 }
 
