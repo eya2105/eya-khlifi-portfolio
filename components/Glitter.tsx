@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export function Glitter({ count = 200, className = "" }) {
+export function Glitter({ count = 300, className = "" }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -10,16 +10,17 @@ export function Glitter({ count = 200, className = "" }) {
     if (!container) return;
     const dots: HTMLDivElement[] = [];
     const colors = [
-      "rgb(255, 255, 255)",
-      "rgba(118, 83, 175, 0.9)",
-      "rgb(122, 207, 235)",
-      "rgba(199, 63, 133, 0.5)"
+      "rgba(255, 255, 255, 0.9)",
+      "rgba(161, 112, 240, 0.8)",
+      "rgba(122, 207, 235, 0.8)",
+      "rgba(243, 105, 176, 0.8)"
     ];
 
     for (let i = 0; i < count; i++) {
       const dot = document.createElement("div");
-      const size = Math.random() * 2 + 0.5; // 0.5 – 2.5px
+      const size = Math.random() * 2 + 0.5; // 0.5 – 2.0px
       const color = colors[Math.floor(Math.random() * colors.length)];
+      const glow = Math.random() * 4 + 2;
       dot.style.cssText = `
         position: absolute;
         width: ${size}px;
@@ -29,8 +30,9 @@ export function Glitter({ count = 200, className = "" }) {
         left: ${Math.random() * 100}%;
         top: ${Math.random() * 100}%;
         opacity: ${Math.random() * 0.5 + 0.3};
-        animation: twinkle ${Math.random() * 4 + 2}s ease-in-out infinite alternate;
-        animation-delay: ${Math.random() * 5}s;
+        box-shadow: 0 0 ${glow}px ${color};
+        animation: twinkle ${Math.random() * 0.5 + 1.5}s ease-in-out infinite;
+        animation-delay: ${Math.random() * 3}s;
       `;
       container.appendChild(dot);
       dots.push(dot);
