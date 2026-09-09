@@ -1,10 +1,8 @@
+
 "use client";
-
 import { useEffect, useRef } from "react";
-
 export function Glitter({ count = 300, className = "" }) {
   const containerRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -15,10 +13,9 @@ export function Glitter({ count = 300, className = "" }) {
       "rgba(122, 207, 235, 0.8)",
       "rgba(243, 105, 176, 0.8)"
     ];
-
     for (let i = 0; i < count; i++) {
       const dot = document.createElement("div");
-      const size = Math.random() * 2 + 0.5; // 0.5 – 2.0px
+      const size = Math.random() * 1 + 0.5; // 0.5 – 2.0px
       const color = colors[Math.floor(Math.random() * colors.length)];
       const glow = Math.random() * 4 + 2;
       dot.style.cssText = `
@@ -39,7 +36,6 @@ export function Glitter({ count = 300, className = "" }) {
     }
     return () => dots.forEach(d => d.remove());
   }, [count]);
-
   return (
     <div
       ref={containerRef}

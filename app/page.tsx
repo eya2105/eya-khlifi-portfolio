@@ -41,7 +41,7 @@ export default async function Home({
             </Reveal>
 
             <Reveal delay={0.08}>
-              <h1 className="title-hover text-hover-scale mt-8 max-w-5xl mx-auto font-display text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.02em] text-white transition-all duration-300 hover:text-shadow-glow">
+              <h1 className="title-hover text-hover-scale mt-8 max-w-5xl mx-auto font-display text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.02em] text-white transition-all duration-300">
                 Building systems that <br />
                 think, connect, and{" "}
                 <span className="text-blue-300">stay secure.</span>
@@ -72,7 +72,8 @@ export default async function Home({
             </Reveal>
           </div>
         </section>
-        
+
+        {/* -------- ABOUT -------- */}
         <section
           id="about"
           className="relative overflow-hidden px-5 py-32 md:px-8 lg:px-12"
@@ -82,7 +83,7 @@ export default async function Home({
           <div className="relative mx-auto max-w-7xl">
             <div className="mb-20 grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">
               <div>
-                <h1 className="title-hover text-5xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-6xl lg:text-7xl hover:text-shadow-glow">
+                <h1 className="title-hover text-5xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-6xl lg:text-7xl">
                   Eya KHLIFI
                 </h1>
                 <p className="text-hover-scale mt-5 text-xl text-white/60 sm:text-2xl">
@@ -112,7 +113,6 @@ export default async function Home({
               </div>
 
               <div className="flex flex-wrap gap-3 lg:justify-end">
-                {/* GitHub – Purple */}
                 <a
                   href="https://github.com/eya2105"
                   target="_blank"
@@ -123,8 +123,6 @@ export default async function Home({
                   GitHub
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
-
-         
                 <a
                   href="https://www.linkedin.com/in/eya-khlifi/"
                   target="_blank"
@@ -135,8 +133,6 @@ export default async function Home({
                   LinkedIn
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
-
-          
                 <a
                   href="https://drive.google.com/file/d/1gFLhDPXs9vvdKQuol2y5oDha0lKPpKfC/view?usp=drive_link"
                   target="_blank"
@@ -147,7 +143,6 @@ export default async function Home({
                   CV
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
-
                 <a
                   href="https://drive.google.com/drive/folders/1SOgdLK2VlNJZcGigoosboFTH5PQXHcQW?usp=drive_link"
                   target="_blank"
@@ -158,8 +153,6 @@ export default async function Home({
                   Certifications
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </a>
-
-  
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=eya.khlifi@insat.ucar.tn"
                   target="_blank"
@@ -190,7 +183,7 @@ export default async function Home({
 
               <div className="space-y-8">
                 <div>
-                  <h2 className="title-hover mb-5 text-2xl font-medium text-white transition-colors duration-300 hover:text-shadow-glow">
+                  <h2 className="title-hover mb-5 text-2xl font-medium text-white transition-colors duration-300">
                     Engineering with a research mindset
                   </h2>
                   <p className="text-hover-scale text-base leading-8 text-white/55">
@@ -232,18 +225,17 @@ export default async function Home({
 
             <div className="mt-28">
               <div className="mb-10">
-                <h2 className="title-hover text-3xl font-medium text-white transition-colors duration-300 sm:text-4xl hover:text-shadow-glow">
+                <h2 className="title-hover text-3xl font-medium text-white transition-colors duration-300 sm:text-4xl">
                   What I work on
                 </h2>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <BrainCircuit className="h-5 w-5 text-cyan-400" />
                   </div>
-                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300 hover:text-shadow-glow">
+                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300">
                     AI Engineering
                   </h3>
                   <p className="text-hover-scale mt-3 text-sm leading-6 text-white/40">
@@ -255,7 +247,7 @@ export default async function Home({
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <ScanEye className="h-5 w-5 text-cyan-400" />
                   </div>
-                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300 hover:text-shadow-glow">
+                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300">
                     Multimodal AI
                   </h3>
                   <p className="text-hover-scale mt-3 text-sm leading-6 text-white/40">
@@ -263,12 +255,11 @@ export default async function Home({
                   </p>
                 </div>
 
-        
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <Database className="h-5 w-5 text-cyan-400" />
                   </div>
-                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300 hover:text-shadow-glow">
+                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300">
                     AI Systems
                   </h3>
                   <p className="text-hover-scale mt-3 text-sm leading-6 text-white/40">
@@ -276,12 +267,11 @@ export default async function Home({
                   </p>
                 </div>
 
-        
                 <div className="group rounded-3xl border border-white/10 bg-white/[0.025] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-cyan-400/20 hover:bg-white/[0.045]">
                   <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.06]">
                     <ShieldCheck className="h-5 w-5 text-cyan-400" />
                   </div>
-                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300 hover:text-shadow-glow">
+                  <h3 className="title-hover text-lg font-medium text-white transition-colors duration-300">
                     AI & Cybersecurity
                   </h3>
                   <p className="text-hover-scale mt-3 text-sm leading-6 text-white/40">
@@ -297,13 +287,13 @@ export default async function Home({
                 <div className="relative">
                   <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
                     <div>
-                      <h2 className="title-hover text-3xl font-medium text-white transition-colors duration-300 sm:text-4xl hover:text-shadow-glow">
+                      <h2 className="title-hover text-3xl font-medium text-white transition-colors duration-300 sm:text-4xl">
                         What I'm looking for
                       </h2>
-                      <p className="text-hover-scale mt-5  text-base leading-8 text-white/50">
+                      <p className="text-hover-scale mt-5 text-base leading-8 text-white/50">
                         I am looking for a six-month end-of-study internship where I can work on challenging problems at the intersection of AI engineering, applied machine learning, cybersecurity, or AI research.
                       </p>
-                      <p className="text-hover-scale mt-4  text-base leading-8 text-white/50">
+                      <p className="text-hover-scale mt-4 text-base leading-8 text-white/50">
                         I am especially interested in teams where experimentation, rigorous evaluation, and engineering come together to build systems that are useful beyond the prototype stage.
                       </p>
                     </div>
@@ -314,13 +304,14 @@ export default async function Home({
           </div>
         </section>
 
+        {/* -------- PROJECTS -------- */}
         <section id="work" className="border-t border-white/5 px-5 py-24 md:px-8 md:py-28 lg:px-12">
           <div className="mx-auto max-w-7xl">
             <Reveal>
               <div className="glass glow-border relative overflow-hidden rounded-[2.5rem] p-8 md:p-12 lg:p-16">
                 <div className="mb-8">
                   <div className="flex flex-wrap items-center gap-3">
-                    <h2 className="title-hover text-hover-scale font-display text-3xl text-white md:text-4xl hover:text-shadow-glow">
+                    <h2 className="title-hover text-hover-scale font-display text-3xl text-white md:text-4xl">
                       Projects
                     </h2>
                   </div>
@@ -336,19 +327,19 @@ export default async function Home({
           </div>
         </section>
 
+        {/* -------- CONTACT -------- */}
         <section id="contact" className="border-t border-white/5 px-5 py-24 md:px-8 md:py-28 lg:px-12">
           <div className="mx-auto max-w-7xl">
             <Reveal>
               <div className="glass glow-border relative overflow-hidden rounded-[2.5rem] p-8 md:p-12 lg:p-16">
                 <div className="relative">
-                  <h2 className="title-hover text-hover-scale font-display text-3xl leading-tight text-white md:text-4xl hover:text-shadow-glow">
+                  <h2 className="title-hover text-hover-scale font-display text-3xl leading-tight text-white md:text-4xl">
                     Let's get in touch
                   </h2>
                   <p className="text-hover-scale mt-5 text-[15px] leading-8 text-slate-400">
                     I'm interested in engineering projects, research opportunities, and work around AI, cybersecurity, and intelligent systems.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-4">
-                    {/* LinkedIn Message */}
                     <a
                       href="https://www.linkedin.com/in/eya-khlifi/"
                       target="_blank"
@@ -358,7 +349,6 @@ export default async function Home({
                       Send me a message
                       <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
-
                     <a
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=eya.khlifi@insat.ucar.tn"
                       target="_blank"
@@ -375,6 +365,7 @@ export default async function Home({
           </div>
         </section>
 
+        {/* -------- FOOTER -------- */}
         <footer className="border-t border-white/5 px-5 py-7 md:px-8 lg:px-12">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 text-[11px] text-slate-500 md:flex-row md:items-center md:justify-between">
             <p className="text-hover-scale">© {new Date().getFullYear()} Eya KHLIFI</p>
