@@ -15,7 +15,7 @@ export function Glitter({ count = 300, className = "" }) {
     ];
     for (let i = 0; i < count; i++) {
       const dot = document.createElement("div");
-      const size = Math.random() * 1 + 0.5; // 0.5 – 2.0px
+      const size = Math.random() * 1.5 + 0.5; // 0.5 – 2.0px
       const color = colors[Math.floor(Math.random() * colors.length)];
       const glow = Math.random() * 4 + 2;
       dot.style.cssText = `
