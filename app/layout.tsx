@@ -7,6 +7,8 @@ import { ScrollButtons } from "@/components/ScrollButtons";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CursorGlow } from "@/components/CursorGlow";
 import { AnimatePresence } from "motion/react";
+import { Analytics } from '@vercel/analytics/next';
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,6 +42,7 @@ export default function RootLayout({
         <ScrollProgress />
         <Navbar />
         <AnimatePresence mode="wait">{children}</AnimatePresence>
+        <Analytics />
         <ScrollButtons />
       </body>
     </html>
