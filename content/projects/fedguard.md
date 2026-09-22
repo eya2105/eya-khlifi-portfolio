@@ -56,7 +56,7 @@ I was responsible for the federated AI component of the project, covering model 
 
 - Integrated the federated model with the wider detection pipeline and Human-in-the-Loop decision layer.
 
-**## Results**
+## Results
 
 On the synthetic evaluation set, the calibrated federated model achieved:
 
